@@ -61,4 +61,4 @@ app.post('/', (req, res) => {
     res.send(result);
 });
 
-app.listen(8086, () => console.log("Connected")) 
+app.listen(process.env.PORT || 8086)//listen(8086, () => console.log("Connected")) 
